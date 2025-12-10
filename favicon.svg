@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Witte achtergrond met afgeronde hoeken -->
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="#ffffff"/>
+
+  <!-- Zwarte V (gestileerd) -->
+  <text x="17" y="43"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="32"
+        font-weight="700"
+        fill="#111111">
+    V
+  </text>
+
+  <!-- Geel vlak met & -->
+  <path d="M26 16 H54 V48 H36 L26 48 Z"
+        fill="#f4b400"/>
+
+  <text x="40" y="40"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#111111">
+    &
+  </text>
+</svg>
