@@ -70,7 +70,7 @@ body {
 }
 
 .logo img {
-    width: 40px;  /* KLEIN logo in header (3–4x kleiner dan eerst) */
+    width: 40px;  /* klein, netjes logo */
     height: auto;
     display: block;
 }
@@ -267,6 +267,31 @@ body {
 .hero-stats-note {
     font-size: 0.8rem;
     color: var(--text-muted);
+}
+
+/* LOGO SECTIE – COMPACT --------------------------------------------- */
+
+.section-logo-feature {
+    padding: 2.5rem 0 1.5rem;
+}
+
+.logo-feature-box {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 1.4rem 1.8rem;
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    display: flex;
+    justify-content: center;
+    max-width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.8);
+}
+
+.logo-feature-img {
+    width: 180px;          /* hier kun je mee spelen: 160–220 is mooi */
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* SECTION HEADERS ---------------------------------------------------- */
@@ -611,6 +636,10 @@ body {
 
     .two-column {
         grid-template-columns: minmax(0, 1fr);
+    }
+
+    .logo-feature-img {
+        width: 160px;
     }
 }
 
