@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160">
+  <!-- Witte achtergrond zodat het logo ook op donkere header mooi zichtbaar is -->
+  <rect x="0" y="0" width="520" height="160" rx="8" fill="#ffffff"/>
+
+  <!-- Linker deel: V + geel vlak met & -->
+  <!-- Zwarte V -->
+  <text x="60" y="112"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="96"
+        font-weight="700"
+        fill="#111111">
+    V
+  </text>
+
+  <!-- Geel vlak -->
+  <path d="M110 38 H250 V122 H140 L110 122 Z"
+        fill="#f4b400"/>
+
+  <!-- Ampersand in het gele vlak -->
+  <text x="166" y="105"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="60"
+        font-weight="700"
+        text-anchor="middle"
+        fill="#111111">
+    &
+  </text>
+
+  <!-- Rechter deel: tekstblok -->
+  <!-- VLECHTERS -->
+  <text x="280" y="70"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="32"
+        font-weight="700"
+        letter-spacing="3"
+        fill="#111111">
+    VLECHTERS
+  </text>
+
+  <!-- & CO -->
+  <text x="280" y="108"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30"
+        font-weight="700"
+        letter-spacing="3"
+        fill="#111111">
+    &amp; CO
+  </text>
+
+  <!-- IJZERVLECHTERS -->
+  <text x="280" y="138"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="18"
+        letter-spacing="8"
+        fill="#333333">
+    IJZERVLECHTERS
+  </text>
+</svg>
