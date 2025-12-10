@@ -70,7 +70,7 @@ body {
 }
 
 .logo img {
-    width: 46px;
+    width: 90px;      /* groter logo */
     height: auto;
     display: block;
 }
