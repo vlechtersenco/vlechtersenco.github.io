@@ -70,7 +70,7 @@ body {
 }
 
 .logo img {
-    width: 88px;  /* groot logo in header */
+    width: 40px;  /* KLEIN logo in header (3–4x kleiner dan eerst) */
     height: auto;
     display: block;
 }
@@ -267,29 +267,6 @@ body {
 .hero-stats-note {
     font-size: 0.8rem;
     color: var(--text-muted);
-}
-
-/* GROTE LOGO SECTIE -------------------------------------------------- */
-
-.section-logo-feature {
-    padding: 4rem 0 2rem;
-}
-
-.logo-feature-box {
-    background: rgba(15, 23, 42, 0.9);
-    padding: 2.5rem;
-    border-radius: 16px;
-    border: 1px solid rgba(148, 163, 184, 0.3);
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-}
-
-.logo-feature-img {
-    width: 320px;
-    max-width: 90%;
-    height: auto;
-    display: block;
 }
 
 /* SECTION HEADERS ---------------------------------------------------- */
@@ -634,10 +611,6 @@ body {
 
     .two-column {
         grid-template-columns: minmax(0, 1fr);
-    }
-
-    .logo-feature-img {
-        width: 260px;
     }
 }
 
