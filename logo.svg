@@ -1,0 +1,19 @@
+<svg width="420" height="160" viewBox="0 0 420 160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="160" fill="white"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <!-- Gele vlak -->
+    <polygon points="120,120 160,120 160,40 120,40 105,80" fill="#F4C019"/>
+    
+    <!-- Zwarte V -->
+    <polygon points="60,40 90,120 110,120 80,40" fill="#000000"/>
+
+    <!-- & teken -->
+    <text x="128" y="95" font-size="48" fill="#000000">&amp;</text>
+
+    <!-- Tekst rechts -->
+    <text x="185" y="70" font-size="36" fill="#111111" letter-spacing="1">VLECHTERS</text>
+    <text x="185" y="110" font-size="36" fill="#111111" letter-spacing="1">&amp; CO</text>
+
+    <text x="185" y="145" font-size="20" fill="#222222" letter-spacing="6">IJZERVLECHTERS</text>
+  </g>
+</svg>
