@@ -12,7 +12,7 @@
     --bg-dark-alt: #0a1022;
     --bg-card: #0f172a;
     --accent: #f97316;
-    --accent-soft: rgba(249, 115, 22, 0.12);
+    --accent-soft: rgba(249, 115, 22, 0.15);
     --text-main: #e5e7eb;
     --text-muted: #9ca3af;
     --border-soft: rgba(148, 163, 184, 0.25);
@@ -45,12 +45,12 @@ body {
 }
 
 .section-alt {
-    background: radial-gradient(circle at top right, rgba(15,23,42,0.9), #020617);
+    background: radial-gradient(circle at top right, rgba(15,23,42,0.88), #020617);
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2.6rem;
 }
 
 .section-header.left {
@@ -71,7 +71,6 @@ body {
 /* =========================================
    HEADER + NAVIGATIE
 ========================================= */
-
 .site-header {
     position: sticky;
     top: 0;
@@ -135,14 +134,13 @@ body {
 }
 
 .main-nav a:hover {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.05);
     color: white;
 }
 
 /* =========================================
    HERO
 ========================================= */
-
 .hero {
     position: relative;
     min-height: 80vh;
@@ -159,7 +157,7 @@ body {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top right, rgba(249,115,22,0.16), transparent 55%);
+    background: radial-gradient(circle at top right, rgba(249,115,22,0.15), transparent 55%);
 }
 
 .hero-content {
@@ -202,7 +200,7 @@ body {
 
 .btn-primary:hover {
     filter: brightness(1.08);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .btn-outline {
@@ -227,7 +225,7 @@ body {
 
 /* HERO STATS CARD */
 .hero-stats-card {
-    background: rgba(10,17,32,0.9);
+    background: rgba(10,17,32,0.92);
     padding: 1.4rem 1.2rem;
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-soft);
@@ -260,12 +258,11 @@ body {
 }
 
 /* =========================================
-   BEDRIJFSBANNER
+   BEDRIJF BANNER
 ========================================= */
-
 .company-banner {
     padding: 3rem 0;
-    background: rgba(15,23,42,0.9);
+    background: rgba(15,23,42,0.85);
     border-top: 1px solid var(--border-soft);
     border-bottom: 1px solid var(--border-soft);
 }
@@ -287,8 +284,9 @@ body {
 }
 
 .banner-item h3 {
-    font-size: 1.3rem;
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem;
 }
 
 .banner-item p {
@@ -299,7 +297,6 @@ body {
 /* =========================================
    DIENSTEN
 ========================================= */
-
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -307,7 +304,7 @@ body {
 }
 
 .card {
-    background: rgba(15,23,42,0.95);
+    background: rgba(15,23,42,0.96);
     border-radius: var(--radius-md);
     padding: 1.5rem;
     border: 1px solid var(--border-soft);
@@ -320,7 +317,7 @@ body {
     padding: 0.25rem 0.8rem;
     border-radius: 999px;
     color: var(--accent);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 0.6rem;
@@ -338,9 +335,8 @@ body {
 }
 
 /* =========================================
-   FLEXIBILITEIT – 4 KAARTEN
+   FLEXIBILITEIT
 ========================================= */
-
 .flexibility-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -376,9 +372,8 @@ body {
 }
 
 /* =========================================
-   TWO COLUMN SECTIONS
+   TWO-COLUMN SECTIONS
 ========================================= */
-
 .two-column {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -405,24 +400,20 @@ body {
     background: var(--accent-soft);
     border: 1px solid var(--accent);
     border-radius: 50%;
+    color: var(--accent);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--accent);
     font-weight: bold;
 }
 
-/* CONTACT BOXES */
+/* HIGHLIGHT BOX */
 .highlight-box {
     background: rgba(15,23,42,0.95);
     border-radius: var(--radius-lg);
     padding: 1.5rem;
     border: 1px solid var(--border-soft);
     box-shadow: var(--shadow-soft);
-}
-
-.highlight-box h3 {
-    margin-bottom: 0.6rem;
 }
 
 .highlight-contact a {
@@ -440,8 +431,8 @@ body {
 }
 
 .bullet-list li {
-    position: relative;
     padding-left: 0.9rem;
+    position: relative;
 }
 
 .bullet-list li::before {
@@ -452,12 +443,30 @@ body {
 }
 
 /* =========================================
+   CONTACT SECTION
+========================================= */
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.contact-list a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
    FOOTER
 ========================================= */
-
 .site-footer {
-    padding: 1.4rem 0;
     background: #020617;
+    padding: 1.4rem 0;
     border-top: 1px solid var(--border-soft);
 }
 
@@ -470,31 +479,29 @@ body {
 }
 
 /* =========================================
-   FLOATING ICON BUTTONS
+   FLOATING BUTTONS
 ========================================= */
-
 .floating-btn {
     position: fixed;
     right: 1.4rem;
     width: 3rem;
     height: 3rem;
-    border-radius: 999px;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50%;
     box-shadow: var(--shadow-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 50;
-    transition: 0.15s ease;
+    transition: 0.2s ease;
 }
 
 .floating-btn img {
-    width: 65%;
-    height: 65%;
+    width: 70%;
+    height: 70%;
 }
 
 .floating-btn.wa {
-    bottom: 6.5rem;
+    bottom: 6.4rem;
     background: #22c55e;
 }
 
@@ -514,20 +521,18 @@ body {
 }
 
 /* =========================================
-   RESPONSIVE
+   RESPONSIVE BREAKPOINTS
 ========================================= */
 
 @media (max-width: 960px) {
+
     .hero-content {
         grid-template-columns: 1fr;
     }
 
+    .cards-grid,
     .flexibility-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 
     .two-column {
@@ -536,9 +541,6 @@ body {
 }
 
 @media (max-width: 720px) {
-    .main-nav {
-        gap: 0.5rem;
-    }
 
     .cards-grid,
     .flexibility-grid {
@@ -546,8 +548,8 @@ body {
     }
 
     .floating-btn {
-        right: 1rem;
         width: 2.7rem;
         height: 2.7rem;
+        right: 1rem;
     }
 }
