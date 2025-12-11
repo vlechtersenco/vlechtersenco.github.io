@@ -288,7 +288,7 @@ body {
 }
 
 .logo-feature-img {
-    width: 180px;          /* hier kun je mee spelen: 160–220 is mooi */
+    width: 180px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -679,4 +679,118 @@ body {
     .floating-btn.wa { bottom: 6.2rem; }
     .floating-btn.in { bottom: 3.7rem; }
     .floating-btn.call { bottom: 1.2rem; }
+}
+
+/* ------------------------------------------------ */
+/* EXTRA: BEDRIJFSBANNER / STATS ONDER HERO        */
+/* ------------------------------------------------ */
+
+.section-stats {
+    padding: 2.5rem 0 1.5rem;
+}
+
+.stats-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.stat-pill {
+    background: rgba(15, 23, 42, 0.96);
+    border-radius: 999px;
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.8);
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 0.1rem;
+}
+
+.stat-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* ------------------------------------------------ */
+/* EXTRA: FLEXIBILITEIT 4-FOTO GRID I.P.V. PROJECTEN */
+/* ------------------------------------------------ */
+
+.flexibility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem;
+}
+
+.flex-item {
+    background: rgba(15, 23, 42, 0.98);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.8);
+    transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.flex-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 26px 45px rgba(15, 23, 42, 0.95);
+}
+
+.flex-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flex-body {
+    padding: 1rem 1.1rem 1.3rem;
+}
+
+.flex-body h3 {
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+    color: var(--accent);
+}
+
+.flex-body p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+/* ------------------------------------------------ */
+/* EXTRA: FADE-IN SCROLL ANIMATIES                  */
+/* ------------------------------------------------ */
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE EXTRA VOOR FLEXIBILITEIT & STATS ----- */
+
+@media (max-width: 820px) {
+    .flexibility-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .stat-pill {
+        min-width: 140px;
+    }
 }
